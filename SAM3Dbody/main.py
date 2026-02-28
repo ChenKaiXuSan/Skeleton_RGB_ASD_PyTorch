@@ -51,14 +51,13 @@ def process_single_video(
 ):
     """处理单个视频文件"""
     rel_video = video_path.relative_to(source_root)
-    split_name = "root"
-    class_name = "all"
+    disease_name = rel_video.parts[0] if len(rel_video.parts) >= 2 else "root"
     video_name = video_path.stem
 
     # --- 1. Person専用のログ設定 ---
     log_dir = out_root / "person_logs"
     log_dir.mkdir(parents=True, exist_ok=True)
-    video_log_file = log_dir / f"{split_name}_{class_name}_{video_name}.log"
+    video_log_file = log_dir / f"{disease_name}_{video_name}.log"
 
     # 新しいハンドラを作成
     handler = logging.FileHandler(video_log_file, mode="a", encoding="utf-8")
@@ -66,18 +65,18 @@ def process_single_video(
     handler.setFormatter(formatter)
 
     logger = logging.getLogger(
-        f"{split_name}_{class_name}_{video_name}"
+        f"{disease_name}_{video_name}"
     )  # このVideo専用のロガーを取得
     logger.addHandler(handler)
     # logger.propagate = False  # 親（Root）ロガーにログを流さない（混ざるのを防ぐ）
 
     logger.info(
-        f"==== Starting Process for Split: {split_name}, Class: {class_name}, Video: {video_name} ===="
+        f"==== Starting Process for Disease: {disease_name}, Video: {video_name} ===="
     )
 
     view_frames: Dict[str, List[np.ndarray]] = load_data({"video": video_path.resolve()})
 
-    rel_parent = Path("root")
+    rel_parent = Path(disease_name)
 
     for view, frames in view_frames.items():
         logger.info(f"  视角 {view} 处理了 {len(frames)} 帧数据。")
@@ -138,11 +137,27 @@ def main(cfg: DictConfig) -> None:
     infer_root = Path(cfg.paths.result_output_path).resolve()
     source_root = Path(cfg.paths.video_path).resolve()
 
-    # --- 1. 扁平目录读取：video/*.mp4 ---
+    # --- 1. 读取 video 下的视频任务 ---
     all_video_tasks: List[Path] = []
     video_patterns = ("*.mp4", "*.mov", "*.avi", "*.mkv", "*.MP4", "*.MOV")
+    target_diseases = set(cfg.infer.get("disease_list", ["all"]))
+
+    # 1.1 根目录视频（兼容旧扁平结构）
     for pattern in video_patterns:
         all_video_tasks.extend(sorted(source_root.glob(pattern)))
+
+    # 1.2 疾病子目录视频（当前结构：video/ASD|DHS|LCS|HipOA/*.mp4）
+    for disease_dir in sorted(source_root.iterdir()):
+        if not disease_dir.is_dir():
+            continue
+
+        if disease_dir.name not in target_diseases and "all" not in target_diseases:
+            continue
+
+        for pattern in video_patterns:
+            all_video_tasks.extend(sorted(disease_dir.glob(pattern)))
+
+    all_video_tasks = sorted(set(all_video_tasks))
 
     if not all_video_tasks:
         logger.error(f"未找到视频任务，请检查目录: {source_root}")
@@ -158,6 +173,7 @@ def main(cfg: DictConfig) -> None:
     logger.info(f"使用 GPU: {gpu_ids} (各 {workers_per_gpu} ワーカー)")
     logger.info(f"総プロセス数: {total_workers}")
     logger.info(f"总视频任务数: {len(all_video_tasks)}")
+    logger.info(f"疾病过滤: {sorted(target_diseases)}")
 
     # 3. 启动并行进程
     cfg_dict = OmegaConf.to_container(cfg, resolve=True)

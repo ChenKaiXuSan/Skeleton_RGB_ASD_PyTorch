@@ -28,8 +28,8 @@ visualize:
   save_mesh_overlay: false
   save_bbox_image: false
   save_3d_mesh: false
-  save_3d_keypoints: false
-  save_together: false
+  save_3d_keypoints: true
+  save_together: true
 
 infer:
   conf_thres: 50.0
@@ -37,8 +37,7 @@ infer:
   num_inference_steps: 4
   gpu: [0, 1] # 指定使用的 GPU 列表
   workers_per_gpu: 2 # 每个 GPU 使用的工作线程数,3090 建议 2
-  person_list: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] # 指定需要处理的人物 ID 列表，-1 表示处理所有人物
-  env_list: [all] # 指定需要处理的环境 ID 列表，-1 表示处理所有环境
+  disease_list: [all] # 可选: [ASD, DHS, LCS, HipOA]，all 表示全部
   views_list: ["front", "left", "right"] # 指定需要处理的视角, front, left, right
 
 dataset:
