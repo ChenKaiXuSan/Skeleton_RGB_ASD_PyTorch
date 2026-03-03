@@ -119,6 +119,8 @@ def gpu_worker(
     logger.info(f"🟢 GPU {gpu_id} 进程启动，待处理任务数: {len(video_paths)}")
 
     for video_path in video_paths:
+    # 从后面往前推导 
+    # for video_path in reversed(video_paths):
         try:
             process_single_video(video_path, source_root, out_root, infer_root, cfg)
         except Exception as e:

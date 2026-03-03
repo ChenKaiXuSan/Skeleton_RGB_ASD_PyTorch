@@ -1,0 +1,176 @@
+========================================================================
+sam3d_body_results: /work/SSR/share/data/asd_dataset/skeleton_rgb_dataset/sam3d_body_results
+video            : /work/SSR/share/data/asd_dataset/skeleton_rgb_dataset/video
+========================================================================
+[OK] ASD count: results=1045, video=1045
+  - frame mismatch 20160120_ASD_lat__V1-0003: result_files=60, video_frames=99
+  - frame mismatch 20160120_ASD_lat__V1-0005: result_files=82, video_frames=85
+  - frame mismatch 20160120_ASD_lat__V1-0006: result_files=72, video_frames=102
+  - frame mismatch 20160120_ASD_lat__V1-0007: result_files=73, video_frames=81
+  - frame mismatch 20160120_ASD_lat__V1-0008: result_files=51, video_frames=102
+  - frame mismatch 20160426_ASD_lat__V1-0003: result_files=70, video_frames=71
+  - frame mismatch 20160426_ASD_lat__V1-0004: result_files=66, video_frames=68
+  - frame mismatch 20160426_ASD_lat__V1-0006: result_files=63, video_frames=64
+  - frame mismatch 20160426_ASD_lat__V1-0008: result_files=48, video_frames=50
+  - frame mismatch 20160523_1_ASD_lat__V1-0002: result_files=117, video_frames=118
+  - frame mismatch 20160523_1_ASD_lat__V1-0006: result_files=100, video_frames=102
+  - frame mismatch 20160523_1_ASD_lat__V1-0008: result_files=117, video_frames=119
+  - frame mismatch 20170130_ASD_lat_ (13): result_files=82, video_frames=83
+  - frame mismatch 20170130_ASD_lat_ (17): result_files=85, video_frames=86
+  - frame mismatch 20170130_ASD_lat_ (18): result_files=63, video_frames=64
+  - frame mismatch 20170130_ASD_lat_ (19): result_files=82, video_frames=83
+  - frame mismatch 20170130_ASD_lat_ (21): result_files=86, video_frames=87
+  - frame mismatch 20170130_ASD_lat_ (23): result_files=84, video_frames=87
+  - frame mismatch 20170130_ASD_lat_ (24): result_files=63, video_frames=64
+  - frame mismatch 20170130_ASD_lat_ (3): result_files=80, video_frames=83
+  - none_detected mismatch 20180723_1_ASD_lat__V1-0029: expected_missing=215, recorded=0
+    missing in txt: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ...
+  - none_detected mismatch 20180723_1_ASD_lat__V1-0034: expected_missing=271, recorded=0
+    missing in txt: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ...
+  - none_detected mismatch 20180723_1_ASD_lat__V1-0039: expected_missing=214, recorded=0
+    missing in txt: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ...
+  - none_detected mismatch 20180723_1_ASD_lat__V1-0044: expected_missing=275, recorded=0
+    missing in txt: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ...
+  - none_detected mismatch 20210323_ASD_lat__V1-0002: expected_missing=647, recorded=0
+    missing in txt: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ...
+  - none_detected mismatch 20210406_ASD_lat_V1-0003: expected_missing=89, recorded=0
+    missing in txt: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ...
+  - none_detected mismatch 20210406_ASD_lat_V1-0008: expected_missing=113, recorded=0
+    missing in txt: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ...
+  - none_detected mismatch 20210406_ASD_lat_V1-0013: expected_missing=89, recorded=0
+    missing in txt: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ...
+  - none_detected mismatch 20210406_ASD_lat_V1-0018: expected_missing=107, recorded=0
+    missing in txt: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ...
+  - none_detected mismatch 20210406_ASD_lat_V1-0023: expected_missing=79, recorded=0
+    missing in txt: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ...
+  - none_detected mismatch 20210406_ASD_lat_V1-0028: expected_missing=110, recorded=0
+    missing in txt: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ...
+  - none_detected mismatch 20210406_ASD_lat_V1-0033: expected_missing=80, recorded=0
+    missing in txt: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ...
+  - none_detected mismatch 20210427_ASD_lat_V1-0004: expected_missing=359, recorded=0
+    missing in txt: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ...
+  - none_detected mismatch 20210427_ASD_lat_V1-0009: expected_missing=318, recorded=0
+    missing in txt: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ...
+  - none_detected mismatch 20210427_ASD_lat_V1-0014: expected_missing=370, recorded=0
+    missing in txt: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ...
+  - none_detected mismatch 20210518_1_ASD_lat_V1-0003: expected_missing=169, recorded=0
+    missing in txt: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ...
+  - none_detected mismatch 20210518_1_ASD_lat_V1-0008: expected_missing=225, recorded=0
+    missing in txt: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ...
+  - none_detected mismatch 20210601_ASD_lat_V1-0005: expected_missing=149, recorded=0
+    missing in txt: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ...
+  - none_detected mismatch 20210601_ASD_lat_V1-0010: expected_missing=170, recorded=0
+    missing in txt: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ...
+  - none_detected mismatch 20210803_ASD_lat_V1-0003: expected_missing=234, recorded=0
+    missing in txt: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ...
+  - ... (436 more frame mismatches)
+  - ... (2 more none_detected mismatches)
+[OK] DHS count: results=584, video=584
+  - frame mismatch 20160927_DHS_lat_V1-0002: result_files=132, video_frames=148
+  - frame mismatch 20160927_DHS_lat_V1-0003: result_files=118, video_frames=119
+  - frame mismatch 20160927_DHS_lat_V1-0004: result_files=131, video_frames=155
+  - frame mismatch 20160927_DHS_lat_V1-0006: result_files=139, video_frames=153
+  - frame mismatch 20160927_DHS_lat_V1-0008: result_files=139, video_frames=150
+  - frame mismatch 20160927_DHS_lat_V1-0009: result_files=119, video_frames=121
+  - frame mismatch 20160927_DHS_lat_V1-0010: result_files=128, video_frames=147
+  - frame mismatch 20160927_DHS_lat_V1-0011: result_files=123, video_frames=125
+  - frame mismatch 20160927_DHS_lat_V1-0012: result_files=147, video_frames=154
+  - frame mismatch 20160927_DHS_lat_V1-0014: result_files=135, video_frames=147
+  - frame mismatch 20160927_DHS_lat_V1-0015: result_files=115, video_frames=116
+  - frame mismatch 20160927_DHS_lat_V1-0016: result_files=142, video_frames=153
+  - frame mismatch 20160927_DHS_lat_V1-0017: result_files=116, video_frames=120
+  - frame mismatch 20160927_DHS_lat_V1-0018: result_files=138, video_frames=153
+  - frame mismatch 20160927_DHS_lat_V1-0020: result_files=144, video_frames=159
+  - frame mismatch 20160927_DHS_lat_V1-0022: result_files=138, video_frames=153
+  - frame mismatch 20160927_DHS_lat_V1-0024: result_files=141, video_frames=153
+  - frame mismatch 20160927_DHS_lat_V1-0026: result_files=140, video_frames=149
+  - frame mismatch 20160927_DHS_lat_V1-0028: result_files=137, video_frames=152
+  - frame mismatch 20160927_DHS_lat_V1-0030: result_files=142, video_frames=153
+  - none_detected mismatch 20180903_1_DHS_lat_V1-0014: expected_missing=157, recorded=0
+    missing in txt: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ...
+  - none_detected mismatch 20180903_1_DHS_lat_V1-0019: expected_missing=192, recorded=0
+    missing in txt: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ...
+  - none_detected mismatch 20180903_1_DHS_lat_V1-0024: expected_missing=172, recorded=0
+    missing in txt: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ...
+  - none_detected mismatch 20180903_1_DHS_lat_V1-0029: expected_missing=185, recorded=0
+    missing in txt: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ...
+  - none_detected mismatch 20180903_1_DHS_lat_V1-0034: expected_missing=166, recorded=0
+    missing in txt: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ...
+  - none_detected mismatch 20180903_1_DHS_lat_V1-0039: expected_missing=187, recorded=0
+    missing in txt: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ...
+  - none_detected mismatch 20180903_1_DHS_lat_V1-0044: expected_missing=172, recorded=0
+    missing in txt: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ...
+  - none_detected mismatch 20180903_1_DHS_lat_V1-0049: expected_missing=188, recorded=0
+    missing in txt: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ...
+  - none_detected mismatch 20180903_1_DHS_lat_V1-0054: expected_missing=173, recorded=0
+    missing in txt: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ...
+  - none_detected mismatch 20180903_1_DHS_lat_V1-0059: expected_missing=181, recorded=0
+    missing in txt: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ...
+  - none_detected mismatch 20180903_1_DHS_lat_V1-0064: expected_missing=173, recorded=0
+    missing in txt: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ...
+  - none_detected mismatch 20180903_1_DHS_lat_V1-0069: expected_missing=175, recorded=0
+    missing in txt: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ...
+  - none_detected mismatch 20190225_DHS_lat_V1-0052: expected_missing=188, recorded=0
+    missing in txt: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ...
+  - none_detected mismatch 20190225_DHS_lat_V1-0057: expected_missing=181, recorded=0
+    missing in txt: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ...
+  - none_detected mismatch 20190225_DHS_lat_V1-0062: expected_missing=200, recorded=0
+    missing in txt: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ...
+  - none_detected mismatch 20190225_DHS_lat_V1-0067: expected_missing=176, recorded=0
+    missing in txt: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ...
+  - none_detected mismatch 20190225_DHS_lat_V1-0072: expected_missing=182, recorded=0
+    missing in txt: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ...
+  - none_detected mismatch 20190924_1_DHS_lat_V1-0003: expected_missing=174, recorded=0
+    missing in txt: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ...
+  - none_detected mismatch 20190924_1_DHS_lat_V1-0008: expected_missing=205, recorded=0
+    missing in txt: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ...
+  - none_detected mismatch 20190924_1_DHS_lat_V1-0013: expected_missing=154, recorded=0
+    missing in txt: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ...
+  - ... (319 more frame mismatches)
+  - ... (2 more none_detected mismatches)
+[OK] LCS count: results=260, video=260
+  - frame mismatch 20170731_LCS_lat_V1-0005: result_files=230, video_frames=231
+  - frame mismatch 20170731_LCS_lat_V1-0010: result_files=387, video_frames=389
+  - frame mismatch 20180109_LCS_lat_V1-0005: result_files=327, video_frames=331
+  - frame mismatch 20180109_LCS_lat_V1-0009: result_files=341, video_frames=342
+  - frame mismatch 20180109_LCS_lat_V1-0013: result_files=351, video_frames=355
+  - frame mismatch 20180109_LCS_lat_V1-0015: result_files=366, video_frames=370
+  - frame mismatch 20180109_LCS_lat_V1-0017: result_files=361, video_frames=364
+  - frame mismatch 20180109_LCS_lat_V1-0018: result_files=439, video_frames=440
+  - frame mismatch 20180109_LCS_lat_V1-0019: result_files=344, video_frames=345
+  - frame mismatch 20180109_LCS_lat_V1-0021: result_files=369, video_frames=371
+  - frame mismatch 20180109_LCS_lat_V1-0023: result_files=371, video_frames=373
+  - frame mismatch 20180109_LCS_lat_V1-0025: result_files=375, video_frames=378
+  - frame mismatch 20180109_LCS_lat_V1-0027: result_files=368, video_frames=370
+  - frame mismatch 20180109_LCS_lat_V1-0029: result_files=377, video_frames=381
+  - frame mismatch 20180109_LCS_lat_V1-0035: result_files=319, video_frames=325
+  - frame mismatch 20180109_LCS_lat_V1-0037: result_files=347, video_frames=348
+  - frame mismatch 20180109_LCS_lat_V1-0041: result_files=343, video_frames=345
+  - frame mismatch 20180109_LCS_lat_V1-0045: result_files=346, video_frames=347
+  - frame mismatch 20180109_LCS_lat_V1-0047: result_files=346, video_frames=347
+  - frame mismatch 20180109_LCS_lat_V1-0049: result_files=326, video_frames=331
+  - ... (68 more frame mismatches)
+[OK] HipOA count: results=64, video=64
+  - frame mismatch 20170919_HipOA_lat_V1-0001: result_files=287, video_frames=294
+  - frame mismatch 20170919_HipOA_lat_V1-0002: result_files=372, video_frames=373
+  - frame mismatch 20170919_HipOA_lat_V1-0003: result_files=282, video_frames=290
+  - frame mismatch 20170919_HipOA_lat_V1-0004: result_files=366, video_frames=372
+  - frame mismatch 20170919_HipOA_lat_V1-0005: result_files=289, video_frames=292
+  - frame mismatch 20170919_HipOA_lat_V1-0006: result_files=360, video_frames=364
+  - frame mismatch 20170919_HipOA_lat_V1-0007: result_files=288, video_frames=291
+  - frame mismatch 20170919_HipOA_lat_V1-0008: result_files=383, video_frames=386
+  - frame mismatch 20170919_HipOA_lat_V1-0009: result_files=289, video_frames=297
+  - frame mismatch 20170919_HipOA_lat_V1-0011: result_files=291, video_frames=293
+  - frame mismatch 20170919_HipOA_lat_V1-0012: result_files=366, video_frames=367
+  - frame mismatch 20170919_HipOA_lat_V1-0013: result_files=294, video_frames=297
+  - frame mismatch 20170919_HipOA_lat_V1-0014: result_files=378, video_frames=379
+  - frame mismatch 20170919_HipOA_lat_V1-0015: result_files=300, video_frames=310
+  - frame mismatch 20170919_HipOA_lat_V1-0016: result_files=383, video_frames=387
+  - frame mismatch 20170919_HipOA_lat_V1-0017: result_files=285, video_frames=286
+  - frame mismatch 20170919_HipOA_lat_V1-0018: result_files=364, video_frames=368
+  - frame mismatch 20180806_2_HipOA_lat_V1-0001: result_files=116, video_frames=117
+  - frame mismatch 20180806_2_HipOA_lat_V1-0005: result_files=122, video_frames=123
+  - frame mismatch 20180806_2_HipOA_lat_V1-0009: result_files=130, video_frames=131
+  - ... (6 more frame mismatches)
+========================================================================
+Summary: category_count_mismatches=0, frame_mismatches=909, none_txt_mismatches=44, missing_videos=0
